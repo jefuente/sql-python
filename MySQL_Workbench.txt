@@ -1,0 +1,6 @@
+USE `twitter`;
+INSERT INTO users (first_name, last_name, created_at) 
+VALUES('Julio', 'Fuentes', now());
+UPDATE users SET first_name = 'Francisco', last_name='Boisier' WHERE id = '6';
+DELETE FROM users WHERE first_name='Julio';
+SELECT * FROM users
